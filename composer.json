@@ -3,6 +3,7 @@
   "description": "PHP Photoshop (only for Windows and MacOS).",
   "type": "library",
   "license": "MIT",
+  "version": "0.0.1",
   "autoload": {
     "psr-4": {
       "Devhammed\\Photoshop\\": "src/"
