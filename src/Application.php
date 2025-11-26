@@ -187,7 +187,11 @@ class Application extends Model
                 throw new ApplicationException('Unsupported operating system.');
             }
 
-            shell_exec(implode(' ', array_map('escapeshellarg', $cmd)));
+            $sh = shell_exec(implode(' ', array_map('escapeshellarg', $cmd)));
+
+            if ($sh === false) {
+                throw new ApplicationException("Cannot execute Photoshop script.");
+            }
 
             $json = file_exists($outputFile) ? file_get_contents($outputFile) : null;
 
