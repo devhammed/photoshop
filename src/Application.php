@@ -15,7 +15,7 @@ use Devhammed\Photoshop\Exceptions\ApplicationException;
  * @property-read string $build The build number of Adobe Photoshop application.
  * @property-read string $currentTool Name of the current tool.
  * @property-read string $locale The language locale of the application.
- * @property-read float $freeMemory The amount of unused memory available to Photoshop.
+ * @property-read integer $freeMemory The amount of unused memory available to Photoshop.
  * @property-read string $name The application name.
  * @property-read string $windowsFileTypes A list of the image file extensions Photoshop can open.
  * @property-read string $scriptingVersion The version of the Scripting interface.
@@ -41,10 +41,6 @@ class Application extends Model
         'displayDialogs',
         'scriptingVersion',
         'scriptingBuildDate',
-    ];
-
-    protected array $casts = [
-        'freeMemory' => 'float',
     ];
 
     protected array $fillable = [
