@@ -1,4 +1,4 @@
-# PHP Photoshop Library
+# PHP Photoshop
 
 <a href="https://img.shields.io/badge/photoshop-2025-green">
 <img src="https://img.shields.io/badge/photoshop-2025-green" alt="photoshop-2025"></a>

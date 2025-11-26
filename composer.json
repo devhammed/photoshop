@@ -1,6 +1,6 @@
 {
   "name": "devhammed/photoshop",
-  "description": "PHP Photoshop Library.",
+  "description": "PHP Photoshop (only for Windows and MacOS).",
   "type": "library",
   "license": "MIT",
   "autoload": {
