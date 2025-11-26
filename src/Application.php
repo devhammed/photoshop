@@ -140,9 +140,11 @@ class Application extends Model
                     var output = {};
 
                     try {
-                        output.result = (function() { return $jsxExpression; })();
+                        var result = $jsxExpression;
 
-                        if (typeof output.result === 'undefined') {
+                        if (typeof result !== 'undefined') {
+                            output.result = result;
+                        } else {
                             output.result = null;
                         }
                     } catch(e) {
