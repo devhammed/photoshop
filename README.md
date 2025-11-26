@@ -21,7 +21,7 @@
 
 The scripting library for Photoshop in PHP.
 
-⚠️ Only works on Windows and MacOS platforms!
+_⚠️ Only works on Windows and MacOS platforms!_
 
 ## Installation
 
