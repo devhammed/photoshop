@@ -9,7 +9,7 @@ use Devhammed\Photoshop\Attributes\Getter;
 use Devhammed\Photoshop\Contracts\Rawable;
 use Devhammed\Photoshop\Exceptions\ApplicationException;
 
-abstract class Model
+abstract class Model implements Rawable
 {
     protected Application $app;
 
@@ -86,6 +86,11 @@ abstract class Model
         return $this->ref;
     }
 
+    public function toRaw(): string
+    {
+        return $this->ref;
+    }
+
     protected function initializeAttributes(): void
     {
         $reflection = new ReflectionClass($this);
@@ -118,10 +123,6 @@ abstract class Model
     {
         if ($value instanceof Rawable) {
             return $value->toRaw();
-        }
-
-        if ($value instanceof Model) {
-            return $value->ref;
         }
 
         if ($value instanceof DateTime) {
