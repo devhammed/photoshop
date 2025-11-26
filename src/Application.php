@@ -43,6 +43,10 @@ class Application extends Model
         'scriptingBuildDate',
     ];
 
+    protected array $casts = [
+        'freeMemory' => 'float',
+    ];
+
     protected array $fillable = [
         'displayDialogs',
     ];
