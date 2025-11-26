@@ -6,8 +6,6 @@ require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Application('2025');
 
-$app->bringToFront();
-
 echo "Name: ".$app->name.PHP_EOL;
 
 echo "Locale: ".$app->locale.PHP_EOL;
