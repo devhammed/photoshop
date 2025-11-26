@@ -66,7 +66,7 @@ abstract class Model implements Rawable
         } else {
             $value = $this->serializeValue($value, $name);
 
-            $this->app->execute("{$this->ref}.{$name} = $value");
+            $this->app->execute("(function(){ {$this->ref}.{$name} = {$value} })()");
         }
     }
 

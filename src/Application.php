@@ -117,7 +117,7 @@ class Application extends Model
             return new Document($this, "app.documents.getByName('{$name}')");
         }
 
-        $this->execute("app.activeDocument = {$document}");
+        $this->execute("(function() { app.activeDocument = {$document} })()");
 
         return $document;
     }
