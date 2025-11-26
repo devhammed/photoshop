@@ -29,6 +29,10 @@ _⚠️ Only works on Windows and MacOS platforms!_
 composer require devhammed/photoshop
 ```
 
+Then you need to make sure you have a working copy of [Photoshop](https://www.adobe.com/products/photoshop.html)
+installed on your system since this library uses the COM API on Windows & AppleScript on MacOS to communicate with
+Photoshop.
+
 ## Credits
 
 This project is maintained by [Hammed Oyedele](https://github.com/devhammed) with inspiration
