@@ -25,13 +25,13 @@ _⚠️ Only works on Windows and MacOS platforms!_
 
 ## Installation
 
+You need to make sure you have a working copy of [Photoshop](https://www.adobe.com/products/photoshop.html)
+installed on your system since this library uses the COM API on Windows & AppleScript on MacOS to communicate with
+Photoshop, then you can install the package via Composer:
+
 ```shell
 composer require devhammed/photoshop
 ```
-
-Then you need to make sure you have a working copy of [Photoshop](https://www.adobe.com/products/photoshop.html)
-installed on your system since this library uses the COM API on Windows & AppleScript on MacOS to communicate with
-Photoshop.
 
 ## Credits
 
