@@ -1,0 +1,21 @@
+{
+  "name": "devhammed/photoshop",
+  "description": "PHP Photoshop Library.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Devhammed\\Photoshop\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Hammed Oyedele",
+      "email": "itz.harmid@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=8.1"
+  }
+}
