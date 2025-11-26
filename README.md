@@ -36,8 +36,7 @@ composer require devhammed/photoshop
 ## Credits
 
 This project is maintained by [Hammed Oyedele](https://github.com/devhammed) with inspiration
-from [Photoshop API Documentation](https://theiviaxx.github.io/photoshop-docs/index.html)
-and [Python Photoshop API](https://github.com/loonghao/photoshop-python-api).
+from [Python Photoshop API](https://github.com/loonghao/photoshop-python-api).
 
 ## License
 
